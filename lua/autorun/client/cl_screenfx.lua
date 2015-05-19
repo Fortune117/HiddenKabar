@@ -18,18 +18,6 @@ ModDelay = 0
 local mat = Material( "hud/hvision", "noclamp smooth" )
 function HDN_DrawHiddenScreen( ply )
 
-
-	if CurTime() > ModDelay then
-		if ply:HiddenVision() then
-			Contrast = math.Approach( Contrast, 0.8, 0.015 )
-			Colour = math.Approach( Colour, 0.0, 0.05 )
-		else
-			Contrast = math.Approach( Contrast, 0.9, 0.02 )
-			Colour = math.Approach( Colour, 1, 0.03 )
-		end
-		ModDelay = CurTime() + 0.03
-	end
-
 	ColorMod[ "$pp_colour_addr" ]		= .09  
 	ColorMod[ "$pp_colour_addg" ]		= .03
 	ColorMod[ "$pp_colour_contrast" ] 	= Contrast
