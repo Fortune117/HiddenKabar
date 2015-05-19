@@ -1,3 +1,4 @@
+local PLY = FindMetaTable( "Player" )
 function PLY:CreateDeathRagdoll( ply, atk, dmginfo )
 	if self.Gibbed then self.Gibbed = false return end
 end 
