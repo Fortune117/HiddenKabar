@@ -11,6 +11,9 @@ if CLIENT then
    SWEP.Slot	= 0
 end
 
+SWEP.Category = "The Hidden"
+SWEP.Spawnable = true 
+
 SWEP.Base				= "weapon_base"
 
 SWEP.Primary.Ammo       = "none"   -- Type of ammo
